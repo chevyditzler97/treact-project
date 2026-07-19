@@ -52,7 +52,6 @@ li {
 p {
   font-size: 18px;
   line-height: 1.5;
-
 }
 
 button {
@@ -66,12 +65,12 @@ button {
   border-radius: 500px;
   font-size: 14px;
   color: #fff;
-  font-weight: bold; 
+  font-weight: bold;
   transition: all 300ms ease;
   cursor: pointer;
 }
 
-.btn:hover { 
+.btn:hover {
   background-color: rgba(80, 17, 204);
 }
 
@@ -146,7 +145,7 @@ nav {
 
 .nav__link--primary:hover {
   background-color: rgba(80, 17, 204);
-  color: white; 
+  color: white;
 }
 
 /*HEADER*/
@@ -275,6 +274,9 @@ h1 {
 
 .list__container {
   margin-top: 40px;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .feature {
@@ -328,7 +330,7 @@ h1 {
 .quality__desc {
   width: 50%;
   max-width: 576px;
-  margin-right: 64px ;
+  margin-right: 64px;
 }
 
 .quality__img--wrapper {
@@ -343,7 +345,6 @@ h1 {
 .quality__img {
   z-index: 1;
 }
-
 
 /*STEPS*/
 
@@ -362,7 +363,6 @@ h1 {
 .steps__img {
   z-index: 2;
 }
-
 
 .steps__descr {
   padding: 32px 0;
@@ -404,7 +404,6 @@ h1 {
   font-weight: 500;
   line-height: 2;
 }
-
 
 /*VALUES*/
 
@@ -478,7 +477,6 @@ h1 {
   margin-top: 32px;
 }
 
-
 .value:nth-child(1) .value__img--wrapper {
   background-color: #9ae6b4;
 }
@@ -494,9 +492,7 @@ h1 {
   width: 50%;
 }
 
-
 /*PRICING*/
-
 
 #pricing .row {
   display: flex;
@@ -522,8 +518,11 @@ h1 {
   padding-top: 0.5rem;
   text-align: center;
   color: rgb(26 32 44);
-  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow:
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 .plan__strip {
   position: absolute;
@@ -610,7 +609,9 @@ h1 {
 }
 .plan__button:hover {
   transform: translate(1px, -1px);
-  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+  box-shadow:
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
@@ -688,3 +689,37 @@ h1 {
   justify-content: space-between;
 }
 
+
+/*TESIMONIALS*/
+
+#testimonials .container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+#testimonials .row {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonials__img {
+  width: 50%;
+}
+
+.testimonials__descr {
+  flex-direction: column;
+  display: flex;
+  padding-left: 64px;
+}
+
+.testimonial {
+  margin-top: 40px;
+}
+
+.testimonial__rating{
+  color: gold;
+}
