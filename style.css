@@ -39,7 +39,7 @@ img {
 
 ul {
   display: flex;
-  flex-wrap: wrap;
+  
 }
 
 li {
@@ -77,9 +77,96 @@ button {
   cursor: pointer;
 }
 
+.fa-bars,
+.fa-circle-xmark {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+}
+
 .btn:hover {
   background-color: rgba(80, 17, 204);
 }
+
+.btn__menu--close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  padding-inline: 8px;
+  color: white;
+}
+
+.menu__links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__list {
+  font-size: 40px;
+  
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 378px;
+  margin: 24px 16px;
+  padding: 32px;
+  background-color: #fff;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 8px;
+  z-index: 4;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(300%);
+  transition: all 300ms ease;
+}
+
+.btn__menu {
+  background-color: transparent;
+  font-size: 40px;
+  text-align: center;
+  border: none;
+  color: #7342d6;
+  display: none;
+}
+
+.menu--open .menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
+.menu__link--primary {
+  color: #f7fafc;
+  padding: 12px 32px;
+  background: #6415ff;
+  border-radius: 500px;
+  border: none;
+  font-size: 18px;
+}
+
+.menu__link {
+  color: #1a202c;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 8px 0;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+
 
 /*NAVIGATION*/
 
@@ -154,6 +241,9 @@ nav {
   background-color: rgba(80, 17, 204);
   color: white;
 }
+
+
+
 
 /*HEADER*/
 
@@ -262,6 +352,10 @@ h1 {
   max-width: 576px;
 }
 
+#features ul {
+  flex-wrap: wrap;
+}
+
 .section__tag {
   font-size: 16px;
   color: #6415ff;
@@ -284,6 +378,7 @@ h1 {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+  
 }
 
 .feature {
@@ -359,6 +454,10 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#steps ul {
+  flex-wrap: wrap;
 }
 
 .steps__img--wrapper {
@@ -892,7 +991,6 @@ h1 {
 /*FOOTER*/
 
 footer {
-  padding: 96px 32px;
   background-color: rgb(100, 21, 255);
   margin-bottom: -32px;
   position: relative;
@@ -992,3 +1090,17 @@ footer {
 .footer__social--link:hover {
   background-color: rgb(229, 231, 235);
 }
+
+/*PHONE, TABLET*/
+
+@media (max-width: 1024px) {
+
+  .nav__links {
+    display: none;
+  }
+
+  .btn__menu {
+    display: block;
+  }
+}
+

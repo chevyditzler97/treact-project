@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/42e5ae6bda.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -36,10 +37,37 @@
               <li><a class="nav__link--primary" href="#signup">Sign Up</a></li>
             </ul>
 
-            <button></button>
+            <button class="btn__menu" onclick="openMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+             <div class="menu">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+              </li>
+              <li class="menu__list">
+                <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+              </li>
+              <li class="menu__list">
+                <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+              </li>
+              <li class="menu__list">
+                <a href="#contact" class="menu__link" onclick="closeMenu()">Contact Us</a>
+              </li>
+              <li class="menu__list">
+                <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
+              </li>
+              <li class="menu__list">
+                <a href="#signup" class="menu__link--primary" onclick="closeMenu()">Sign Up</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
+
       <header>
         <div class="container">
           <div class="row">
